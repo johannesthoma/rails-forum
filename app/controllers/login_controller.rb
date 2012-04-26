@@ -12,5 +12,18 @@ class LoginController < ApplicationController
 			render :action => "index"
 		end
 	end
+
+	def signup
+		@user = Users.new
+	end
+
+	def register
+		@user = Users.create params[:user]
+		unless @user.errors.empty?
+			render :action=>"signup"
+		else
+			redirect_to :controller => "main"
+		end
+	end
 end
-			
+

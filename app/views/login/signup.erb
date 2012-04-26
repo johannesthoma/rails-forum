@@ -1,0 +1,16 @@
+<% if @user.errors.any? %>
+There were error(s):<br/>
+<ul>
+<% for e in @user.errors.full_messages %>
+<li><%= h e %></li>
+<% end %>
+<% end %>
+
+<%= form_for :user, :url => { :action=>"register" } do |f| %>
+Pick a login name: <%= f.text_field "login_name" %><br/>
+Your first name: <%= f.text_field "first_name" %><br/>
+Your last name: <%= f.text_field "last_name" %><br/>
+Your eMail: <%= f.text_field "email" %><br/>
+Pick a password: <%= f.password_field "password" %><br/>
+<%= f.submit %>
+<% end %>
