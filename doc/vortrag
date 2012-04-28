@@ -1,0 +1,107 @@
+Developing Web applications
+with
+Ruby on Rails
+
+DI. Johannes Thoma
+johannes.thoma@gmx.at
+www.jtsoft.at
+
+---
+
+Ruby
+
+Objectorientiert - Everything is an Object
+
+Skriptsprache - Interpretiert
+
+Blocks, Regexps, Reflection, Exceptions
+
+Arrays, Hashes, Strings (mit Encoding), Bignum
+
+---
+
+Rails
+
+Web application framework
+
+Model View Controller
+
+ActiveRecord, ActionView, ActiveSupport
+
+RAILS_ENV, DRY, REST Urls, Migrations
+
+Database agnostic
+
+---
+
+sudo gem install rails
+
+rails new <app-name>
+
+Einstiegsseite setzen
+
+Migrationskripte schreiben
+
+Models schreiben
+
+Controller und Views schreiben
+
+---
+
+app
+	model
+	view
+	controller
+	helpers
+
+config
+	database.yml
+	routes.rb
+
+db
+	db/migrate
+
+public
+
+test
+
+doc
+
+script
+
+---
+
+script/server
+
+script/console
+
+
+---
+
+bundle
+	Gemfile
+
+rvm
+	www.beginrescueend.com
+
+git
+
+---
+
+Demo
+
+	Users <-> Postings
+
+	Login
+
+	User anlegen
+
+	...
+	
+---
+
+Happy Hacking
+
+- Johannes
+
+
