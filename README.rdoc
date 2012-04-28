@@ -22,7 +22,7 @@ Just creating users (no email verifycation yet) and logging in works.
 
 For the 0.0.1 release we need:
 
-	.) eMail verifycation on creating users
-	.) Postings (with acts_as_tree)
-	.) Votings (users can vote up - similar to Facebook Like)
-	.) A basic Web design
+* eMail verifycation on creating users
+* Postings (with acts_as_tree)
+* Votings (users can vote up - similar to Facebook Like)
+* A basic Web design
