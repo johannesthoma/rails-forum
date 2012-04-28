@@ -1,28 +1,28 @@
 == Rails-forum - A Discussion Forum written in Ruby on Rails
 
-= License
+=== License
 
 This code is GPL. See www.gnu.org for more details
 
-= Introduction
+=== Introduction
 
 ``Right now it just prints Hello World but eventually it will be
   an air traffic control system''
 
-= Download
+=== Download
 
 Go to https://github.com/johannesthoma/rails-forum for the git repo.
 No releases yet, sorry.
 
-= Status
+=== Status
 
 Just creating users (no email verifycation yet) and logging in works.
 
-= Roadmap
+=== Roadmap
 
 For the 0.0.1 release we need:
 
-	*) eMail verifycation on creating users
-	*) Postings (with acts_as_tree)
-	*) Votings (users can vote up - similar to Facebook Like)
-	*) A basic Web design
+	.) eMail verifycation on creating users
+	.) Postings (with acts_as_tree)
+	.) Votings (users can vote up - similar to Facebook Like)
+	.) A basic Web design
