@@ -30,6 +30,8 @@ ActiveRecord, ActionView, ActiveSupport
 
 RAILS_ENV, DRY, REST Urls, Migrations
 
+Partlets, erb
+
 Database agnostic
 
 ---
