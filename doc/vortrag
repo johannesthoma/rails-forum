@@ -34,6 +34,8 @@ Partlets, erb
 
 Database agnostic
 
+layouts, before_filter
+
 ---
 
 sudo gem install rails
