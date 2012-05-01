@@ -1,0 +1,7 @@
+<h1><%= h @question.title %></h1>
+<%= h @question.text %>
+<% for a in @question.answers %>
+	<%= h a.text %>
+<% end %>
+
+<%= link_to "Answer question", { :action => "answer_question", :id => @question.id } %>
