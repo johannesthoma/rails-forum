@@ -3,7 +3,7 @@ class LoginController < ApplicationController
 	end
 
 	def login
-		u = Users.find_by_login_name params[:login_name]
+		u = User.find_by_login_name params[:login_name]
 		if u and params[:password] == u.password then
 			session[:user_id] = u.id
 			redirect_to :controller => "main"
@@ -14,11 +14,11 @@ class LoginController < ApplicationController
 	end
 
 	def signup
-		@user = Users.new
+		@user = User.new
 	end
 
 	def register
-		@user = Users.create params[:user]
+		@user = User.create params[:user]
 		unless @user.errors.empty?
 			render :action=>"signup"
 		else
