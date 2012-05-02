@@ -8,9 +8,7 @@ class MainController < ApplicationController
 	end
 
 	def submit_question
-		@question = Question.create params[:question]+{:user_id => session[:user_id]}
-		@question.user_id = session[:user_id]
-		@question.save
+		@question = Question.create(params[:question].merge :user_id => session[:user_id])
 
 		if @question.errors.empty?
 			redirect_to :action => "index"

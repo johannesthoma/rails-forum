@@ -1,3 +1,4 @@
+<%= render :partial => "login/index" %>
 <%= link_to "Ask a question", :action => "ask_question" %>
 <% for p in @questions %>
 	<%= link_to h("#{p.title}"), { :action => "show_question", :id => p.id } %><br/>

@@ -1,3 +1,4 @@
+<%= render :partial => "login/index" %>
 <%= @msg %>
 <%= form_for :question, :url => { :action => "submit_question" } do |f| %>
 <%= f.text_field :title %><br/>

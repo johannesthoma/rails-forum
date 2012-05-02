@@ -1,3 +1,4 @@
+<%= render :partial => "login/index" %>
 <%= @msg %>
 <%= form_for :answer, :url => { :action => "submit_answer", :id => @question.id } do |f| %>
 <%= f.text_area :text %><br/>

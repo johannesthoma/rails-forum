@@ -25,5 +25,11 @@ class LoginController < ApplicationController
 			redirect_to :controller => "main"
 		end
 	end
+
+	def logout
+		session[:user_id] = nil
+		redirect_to :controller => "main"
+	end
 end
+
 

@@ -1,0 +1,14 @@
+<div align="right">
+<% unless controller.user %>
+<%= form_tag :action => "login", :controller=>"login" do %>
+<%= text_field_tag "login_name" %>
+<%= password_field_tag "password" %>
+<%= submit_tag "Login" %>
+<%= link_to "Sign up", :action=>"signup", :controller=>"login" %>
+<% end %>
+<% else %>
+Welcome, <%= controller.user.first_name %> <%= controller.user.last_name %>
+<%= link_to "Log out", :action=>"logout", :controller=>"login" %>
+<% end %>
+</div>
+<hr/>
