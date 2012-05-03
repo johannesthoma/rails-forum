@@ -1,8 +1,10 @@
 <%= render :partial => "login/index" %>
 <h1><%= h @question.title %></h1>
-<%= h @question.text %>
+<%= h @question.text %><br/>
 <% for a in @question.answers %>
-	<%= h a.text %>
+	<%= h a.text %><br/>
 <% end %>
+
+<br/>
 
 <%= link_to "Answer question", { :action => "answer_question", :id => @question.id } %>
